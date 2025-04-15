@@ -8,10 +8,10 @@ public class removingstars_2390{
             if(ch =='*'){
                 if(result.length() >0){
                     result.deleteCharAt(result.length() -1);
-                }
+                } 
             }else{
                 result.append(ch);
-                System.out.println(result);
+                System.out.println(result);  
             }
         }
         return result.toString();
