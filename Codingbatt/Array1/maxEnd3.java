@@ -13,12 +13,11 @@ public class maxEnd3 {
         System.out.println(Arrays.toString(obk.maxEnd31(nums3))); // [3, 3, 3]
     }
 
-    public int[] maxEnd31(int[] nums) {
-        int max = 0;
-        for (int i=0;i<nums.length;i++) {
-            max = Math.max(nums[i], max);
-        }
+   public int[] maxEnd31(int[] nums) {
+ int max = 0;
+      max = Math.max(nums[0], max);
+       max = Math.max(nums[2], max);
         return new int[] { max, max, max };
-    }
+}
 
 }
