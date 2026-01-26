@@ -1,5 +1,3 @@
-package Codingbatt.Array1;
-
 public class firstLast6 {
     public static void main(String[] args) {
 

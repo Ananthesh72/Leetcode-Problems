@@ -1,5 +1,3 @@
-package Codingbatt.Array1;
-
 public class sameFirstLast {
     public static void main(String[] args) {
         sameFirstLast obj = new sameFirstLast();
