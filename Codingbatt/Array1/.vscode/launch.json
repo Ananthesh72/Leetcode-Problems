@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "maxTriple",
+            "request": "launch",
+            "mainClass": "maxTriple",
+            "projectName": "Array1_cdfb6432"
+        },
+        {
+            "type": "java",
+            "name": "midThree",
+            "request": "launch",
+            "mainClass": "midThree",
+            "projectName": "Array1_cdfb6432"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

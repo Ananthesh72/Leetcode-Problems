@@ -1,4 +1,4 @@
-public class sameFirstLast {
+ public class sameFirstLast {
     public static void main(String[] args) {
         sameFirstLast obj = new sameFirstLast();
         int nums[] = { 1, 2, 3 ,1};
