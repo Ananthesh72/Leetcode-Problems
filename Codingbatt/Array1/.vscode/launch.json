@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rotateRight",
+            "request": "launch",
+            "mainClass": "rotateRight",
+            "projectName": "Array1_cdfb6432"
+        },
+        {
+            "type": "java",
             "name": "maxTriple",
             "request": "launch",
             "mainClass": "maxTriple",
