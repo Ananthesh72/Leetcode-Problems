@@ -26,7 +26,7 @@ public class remloopinlinkedlist {
             System.out.print(head.data + "-->");
             head = head.next;
         }
-        System.out.print(head.data + "-->" + head.next);
+        System.out.print(head.data + "-->" + head.next+" ");
     }
 
     public void removeLoop(Node head) {
