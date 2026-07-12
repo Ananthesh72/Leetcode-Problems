@@ -1,32 +1,31 @@
+// package Geeks for Geeks;
+
 import java.util.HashMap;
 
 public class subarraywithsumk {
     public static void main(String[] args) {
-        int[] arr = {10, 2, -2, -20, 10};
-        int k = -10;
+        int[] arr = {10, 5, 2, 7, 1, -10};
+        int k = 15;
         System.out.println(countSubarrays(arr, k)); // Output: 2
     }
     public static int countSubarrays(int[] arr, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);
-
+        int max=0;
         int prefixSum = 0;
-        int count = 0;
+        
 
-        for (int num : arr) {
-            prefixSum += num;
+    for (int  i =0;i< arr.length ;i++){
+        prefixSum += arr[i];
 
-            System.out.println("data sub:"+(prefixSum - k));
-
-            if (map.containsKey(prefixSum - k)) {
-                count += map.get(prefixSum - k);
-                System.out.println(count);
-            }
-
-            map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
-            System.out.println(map);
+        if(map.containsKey(prefixSum - k)){
+            max = Math.max(max, i- map.get(prefixSum - k));
         }
 
-        return count;
+        if(!map.containsKey(prefixSum)){
+            map.getOrDefault(prefixSum,i);
+        }
+        
+    }
+        return max;
     }
 }
